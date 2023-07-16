@@ -1,0 +1,1067 @@
+[
+	{
+	  "name": "Uint256",
+	  "size": 2,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "low",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "high",
+		  "type": "felt",
+		  "offset": 1
+		}
+	  ]
+	},
+	{
+	  "name": "AdventurerState",
+	  "size": 28,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "Race",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "HomeRealm",
+		  "type": "felt",
+		  "offset": 1
+		},
+		{
+		  "name": "Birthdate",
+		  "type": "felt",
+		  "offset": 2
+		},
+		{
+		  "name": "Name",
+		  "type": "felt",
+		  "offset": 3
+		},
+		{
+		  "name": "Order",
+		  "type": "felt",
+		  "offset": 4
+		},
+		{
+		  "name": "ImageHash1",
+		  "type": "felt",
+		  "offset": 5
+		},
+		{
+		  "name": "ImageHash2",
+		  "type": "felt",
+		  "offset": 6
+		},
+		{
+		  "name": "Health",
+		  "type": "felt",
+		  "offset": 7
+		},
+		{
+		  "name": "Level",
+		  "type": "felt",
+		  "offset": 8
+		},
+		{
+		  "name": "Strength",
+		  "type": "felt",
+		  "offset": 9
+		},
+		{
+		  "name": "Dexterity",
+		  "type": "felt",
+		  "offset": 10
+		},
+		{
+		  "name": "Vitality",
+		  "type": "felt",
+		  "offset": 11
+		},
+		{
+		  "name": "Intelligence",
+		  "type": "felt",
+		  "offset": 12
+		},
+		{
+		  "name": "Wisdom",
+		  "type": "felt",
+		  "offset": 13
+		},
+		{
+		  "name": "Charisma",
+		  "type": "felt",
+		  "offset": 14
+		},
+		{
+		  "name": "Luck",
+		  "type": "felt",
+		  "offset": 15
+		},
+		{
+		  "name": "XP",
+		  "type": "felt",
+		  "offset": 16
+		},
+		{
+		  "name": "WeaponId",
+		  "type": "felt",
+		  "offset": 17
+		},
+		{
+		  "name": "ChestId",
+		  "type": "felt",
+		  "offset": 18
+		},
+		{
+		  "name": "HeadId",
+		  "type": "felt",
+		  "offset": 19
+		},
+		{
+		  "name": "WaistId",
+		  "type": "felt",
+		  "offset": 20
+		},
+		{
+		  "name": "FeetId",
+		  "type": "felt",
+		  "offset": 21
+		},
+		{
+		  "name": "HandsId",
+		  "type": "felt",
+		  "offset": 22
+		},
+		{
+		  "name": "NeckId",
+		  "type": "felt",
+		  "offset": 23
+		},
+		{
+		  "name": "RingId",
+		  "type": "felt",
+		  "offset": 24
+		},
+		{
+		  "name": "Status",
+		  "type": "felt",
+		  "offset": 25
+		},
+		{
+		  "name": "Beast",
+		  "type": "felt",
+		  "offset": 26
+		},
+		{
+		  "name": "Upgrading",
+		  "type": "felt",
+		  "offset": 27
+		}
+	  ]
+	},
+	{
+	  "name": "TopScore",
+	  "size": 4,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "address",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "xp",
+		  "type": "felt",
+		  "offset": 1
+		},
+		{
+		  "name": "adventurer_id",
+		  "type": "Uint256",
+		  "offset": 2
+		}
+	  ]
+	},
+	{
+	  "name": "AdventurerDynamic",
+	  "size": 21,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "Health",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "Level",
+		  "type": "felt",
+		  "offset": 1
+		},
+		{
+		  "name": "Strength",
+		  "type": "felt",
+		  "offset": 2
+		},
+		{
+		  "name": "Dexterity",
+		  "type": "felt",
+		  "offset": 3
+		},
+		{
+		  "name": "Vitality",
+		  "type": "felt",
+		  "offset": 4
+		},
+		{
+		  "name": "Intelligence",
+		  "type": "felt",
+		  "offset": 5
+		},
+		{
+		  "name": "Wisdom",
+		  "type": "felt",
+		  "offset": 6
+		},
+		{
+		  "name": "Charisma",
+		  "type": "felt",
+		  "offset": 7
+		},
+		{
+		  "name": "Luck",
+		  "type": "felt",
+		  "offset": 8
+		},
+		{
+		  "name": "XP",
+		  "type": "felt",
+		  "offset": 9
+		},
+		{
+		  "name": "WeaponId",
+		  "type": "felt",
+		  "offset": 10
+		},
+		{
+		  "name": "ChestId",
+		  "type": "felt",
+		  "offset": 11
+		},
+		{
+		  "name": "HeadId",
+		  "type": "felt",
+		  "offset": 12
+		},
+		{
+		  "name": "WaistId",
+		  "type": "felt",
+		  "offset": 13
+		},
+		{
+		  "name": "FeetId",
+		  "type": "felt",
+		  "offset": 14
+		},
+		{
+		  "name": "HandsId",
+		  "type": "felt",
+		  "offset": 15
+		},
+		{
+		  "name": "NeckId",
+		  "type": "felt",
+		  "offset": 16
+		},
+		{
+		  "name": "RingId",
+		  "type": "felt",
+		  "offset": 17
+		},
+		{
+		  "name": "Status",
+		  "type": "felt",
+		  "offset": 18
+		},
+		{
+		  "name": "Beast",
+		  "type": "felt",
+		  "offset": 19
+		},
+		{
+		  "name": "Upgrading",
+		  "type": "felt",
+		  "offset": 20
+		}
+	  ]
+	},
+	{
+	  "data": [
+		{
+		  "name": "previousOwner",
+		  "type": "felt"
+		},
+		{
+		  "name": "newOwner",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "OwnershipTransferred",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "from_",
+		  "type": "felt"
+		},
+		{
+		  "name": "to",
+		  "type": "felt"
+		},
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "Transfer",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		},
+		{
+		  "name": "approved",
+		  "type": "felt"
+		},
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "Approval",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		},
+		{
+		  "name": "operator",
+		  "type": "felt"
+		},
+		{
+		  "name": "approved",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "ApprovalForAll",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "implementation",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "Upgraded",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "previousAdmin",
+		  "type": "felt"
+		},
+		{
+		  "name": "newAdmin",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "AdminChanged",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "adventurer_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "owner",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "MintAdventurer",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "adventurer_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "adventurer_state",
+		  "type": "AdventurerState"
+		}
+	  ],
+	  "keys": [],
+	  "name": "UpdateAdventurerState",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "adventurer_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "level",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "AdventurerLeveledUp",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "adventurer_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "discovery_type",
+		  "type": "felt"
+		},
+		{
+		  "name": "sub_discovery_type",
+		  "type": "felt"
+		},
+		{
+		  "name": "entity_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "output_amount",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "Discovery",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "top_score_holders",
+		  "type": "TopScore"
+		}
+	  ],
+	  "keys": [],
+	  "name": "HighScoreReward",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "top_score_holders",
+		  "type": "TopScore"
+		}
+	  ],
+	  "keys": [],
+	  "name": "NewTopScore",
+	  "type": "event"
+	},
+	{
+	  "name": "initializer",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "name",
+		  "type": "felt"
+		},
+		{
+		  "name": "symbol",
+		  "type": "felt"
+		},
+		{
+		  "name": "address_of_controller",
+		  "type": "felt"
+		},
+		{
+		  "name": "proxy_admin",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "upgrade",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "new_implementation",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "mint",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "to",
+		  "type": "felt"
+		},
+		{
+		  "name": "race",
+		  "type": "felt"
+		},
+		{
+		  "name": "home_realm",
+		  "type": "felt"
+		},
+		{
+		  "name": "name",
+		  "type": "felt"
+		},
+		{
+		  "name": "order",
+		  "type": "felt"
+		},
+		{
+		  "name": "image_hash_1",
+		  "type": "felt"
+		},
+		{
+		  "name": "image_hash_2",
+		  "type": "felt"
+		},
+		{
+		  "name": "interface_address",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ]
+	},
+	{
+	  "name": "mint_with_starting_weapon",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "to",
+		  "type": "felt"
+		},
+		{
+		  "name": "race",
+		  "type": "felt"
+		},
+		{
+		  "name": "home_realm",
+		  "type": "felt"
+		},
+		{
+		  "name": "name",
+		  "type": "felt"
+		},
+		{
+		  "name": "order",
+		  "type": "felt"
+		},
+		{
+		  "name": "image_hash_1",
+		  "type": "felt"
+		},
+		{
+		  "name": "image_hash_2",
+		  "type": "felt"
+		},
+		{
+		  "name": "weapon_id",
+		  "type": "felt"
+		},
+		{
+		  "name": "interface_address",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "item_token_id",
+		  "type": "Uint256"
+		}
+	  ]
+	},
+	{
+	  "name": "equip_item",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "item_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "unequip_item",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "item_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "update_status",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "status",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "assign_beast",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "value",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "deduct_health",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "amount",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "adventurer_dynamic",
+		  "type": "AdventurerDynamic"
+		}
+	  ]
+	},
+	{
+	  "name": "add_health",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "amount",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "increase_xp",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "amount",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "update_adventurer",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "_adventurer_dynamic",
+		  "type": "AdventurerDynamic"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "upgrade_stat",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "stat",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "purchase_health",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "number",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "explore",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "type",
+		  "type": "felt"
+		},
+		{
+		  "name": "id",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "get_adventurer_by_id",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "adventurer",
+		  "type": "AdventurerState"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "totalSupply",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "totalSupply",
+		  "type": "Uint256"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "tokenByIndex",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "index",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "token_of_owner_by_index",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		},
+		{
+		  "name": "index",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "supportsInterface",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "interfaceId",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "name",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "name",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "symbol",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "symbol",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "balance_of",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "balance",
+		  "type": "Uint256"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "owner_of",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "getApproved",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "approved",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "isApprovedForAll",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		},
+		{
+		  "name": "operator",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "isApproved",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "tokenURI",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "tokenURI_len",
+		  "type": "felt"
+		},
+		{
+		  "name": "tokenURI",
+		  "type": "felt*"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "owner",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "transferOwnership",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "newOwner",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "renounceOwnership",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": []
+	}
+  ]

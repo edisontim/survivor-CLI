@@ -1,0 +1,888 @@
+[
+	{
+	  "name": "Uint256",
+	  "size": 2,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "low",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "high",
+		  "type": "felt",
+		  "offset": 1
+		}
+	  ]
+	},
+	{
+	  "name": "Beast",
+	  "size": 11,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "Id",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "AttackType",
+		  "type": "felt",
+		  "offset": 1
+		},
+		{
+		  "name": "ArmorType",
+		  "type": "felt",
+		  "offset": 2
+		},
+		{
+		  "name": "Rank",
+		  "type": "felt",
+		  "offset": 3
+		},
+		{
+		  "name": "Prefix_1",
+		  "type": "felt",
+		  "offset": 4
+		},
+		{
+		  "name": "Prefix_2",
+		  "type": "felt",
+		  "offset": 5
+		},
+		{
+		  "name": "Health",
+		  "type": "felt",
+		  "offset": 6
+		},
+		{
+		  "name": "Adventurer",
+		  "type": "felt",
+		  "offset": 7
+		},
+		{
+		  "name": "XP",
+		  "type": "felt",
+		  "offset": 8
+		},
+		{
+		  "name": "Level",
+		  "type": "felt",
+		  "offset": 9
+		},
+		{
+		  "name": "SlainOnDate",
+		  "type": "felt",
+		  "offset": 10
+		}
+	  ]
+	},
+	{
+	  "name": "AdventurerDynamic",
+	  "size": 21,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "Health",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "Level",
+		  "type": "felt",
+		  "offset": 1
+		},
+		{
+		  "name": "Strength",
+		  "type": "felt",
+		  "offset": 2
+		},
+		{
+		  "name": "Dexterity",
+		  "type": "felt",
+		  "offset": 3
+		},
+		{
+		  "name": "Vitality",
+		  "type": "felt",
+		  "offset": 4
+		},
+		{
+		  "name": "Intelligence",
+		  "type": "felt",
+		  "offset": 5
+		},
+		{
+		  "name": "Wisdom",
+		  "type": "felt",
+		  "offset": 6
+		},
+		{
+		  "name": "Charisma",
+		  "type": "felt",
+		  "offset": 7
+		},
+		{
+		  "name": "Luck",
+		  "type": "felt",
+		  "offset": 8
+		},
+		{
+		  "name": "XP",
+		  "type": "felt",
+		  "offset": 9
+		},
+		{
+		  "name": "WeaponId",
+		  "type": "felt",
+		  "offset": 10
+		},
+		{
+		  "name": "ChestId",
+		  "type": "felt",
+		  "offset": 11
+		},
+		{
+		  "name": "HeadId",
+		  "type": "felt",
+		  "offset": 12
+		},
+		{
+		  "name": "WaistId",
+		  "type": "felt",
+		  "offset": 13
+		},
+		{
+		  "name": "FeetId",
+		  "type": "felt",
+		  "offset": 14
+		},
+		{
+		  "name": "HandsId",
+		  "type": "felt",
+		  "offset": 15
+		},
+		{
+		  "name": "NeckId",
+		  "type": "felt",
+		  "offset": 16
+		},
+		{
+		  "name": "RingId",
+		  "type": "felt",
+		  "offset": 17
+		},
+		{
+		  "name": "Status",
+		  "type": "felt",
+		  "offset": 18
+		},
+		{
+		  "name": "Beast",
+		  "type": "felt",
+		  "offset": 19
+		},
+		{
+		  "name": "Upgrading",
+		  "type": "felt",
+		  "offset": 20
+		}
+	  ]
+	},
+	{
+	  "name": "BeastDynamic",
+	  "size": 5,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "Health",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "Adventurer",
+		  "type": "felt",
+		  "offset": 1
+		},
+		{
+		  "name": "XP",
+		  "type": "felt",
+		  "offset": 2
+		},
+		{
+		  "name": "Level",
+		  "type": "felt",
+		  "offset": 3
+		},
+		{
+		  "name": "SlainOnDate",
+		  "type": "felt",
+		  "offset": 4
+		}
+	  ]
+	},
+	{
+	  "name": "AdventurerState",
+	  "size": 28,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "Race",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "HomeRealm",
+		  "type": "felt",
+		  "offset": 1
+		},
+		{
+		  "name": "Birthdate",
+		  "type": "felt",
+		  "offset": 2
+		},
+		{
+		  "name": "Name",
+		  "type": "felt",
+		  "offset": 3
+		},
+		{
+		  "name": "Order",
+		  "type": "felt",
+		  "offset": 4
+		},
+		{
+		  "name": "ImageHash1",
+		  "type": "felt",
+		  "offset": 5
+		},
+		{
+		  "name": "ImageHash2",
+		  "type": "felt",
+		  "offset": 6
+		},
+		{
+		  "name": "Health",
+		  "type": "felt",
+		  "offset": 7
+		},
+		{
+		  "name": "Level",
+		  "type": "felt",
+		  "offset": 8
+		},
+		{
+		  "name": "Strength",
+		  "type": "felt",
+		  "offset": 9
+		},
+		{
+		  "name": "Dexterity",
+		  "type": "felt",
+		  "offset": 10
+		},
+		{
+		  "name": "Vitality",
+		  "type": "felt",
+		  "offset": 11
+		},
+		{
+		  "name": "Intelligence",
+		  "type": "felt",
+		  "offset": 12
+		},
+		{
+		  "name": "Wisdom",
+		  "type": "felt",
+		  "offset": 13
+		},
+		{
+		  "name": "Charisma",
+		  "type": "felt",
+		  "offset": 14
+		},
+		{
+		  "name": "Luck",
+		  "type": "felt",
+		  "offset": 15
+		},
+		{
+		  "name": "XP",
+		  "type": "felt",
+		  "offset": 16
+		},
+		{
+		  "name": "WeaponId",
+		  "type": "felt",
+		  "offset": 17
+		},
+		{
+		  "name": "ChestId",
+		  "type": "felt",
+		  "offset": 18
+		},
+		{
+		  "name": "HeadId",
+		  "type": "felt",
+		  "offset": 19
+		},
+		{
+		  "name": "WaistId",
+		  "type": "felt",
+		  "offset": 20
+		},
+		{
+		  "name": "FeetId",
+		  "type": "felt",
+		  "offset": 21
+		},
+		{
+		  "name": "HandsId",
+		  "type": "felt",
+		  "offset": 22
+		},
+		{
+		  "name": "NeckId",
+		  "type": "felt",
+		  "offset": 23
+		},
+		{
+		  "name": "RingId",
+		  "type": "felt",
+		  "offset": 24
+		},
+		{
+		  "name": "Status",
+		  "type": "felt",
+		  "offset": 25
+		},
+		{
+		  "name": "Beast",
+		  "type": "felt",
+		  "offset": 26
+		},
+		{
+		  "name": "Upgrading",
+		  "type": "felt",
+		  "offset": 27
+		}
+	  ]
+	},
+	{
+	  "data": [
+		{
+		  "name": "implementation",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "Upgraded",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "previousAdmin",
+		  "type": "felt"
+		},
+		{
+		  "name": "newAdmin",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "AdminChanged",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "from_",
+		  "type": "felt"
+		},
+		{
+		  "name": "to",
+		  "type": "felt"
+		},
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "Transfer",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		},
+		{
+		  "name": "approved",
+		  "type": "felt"
+		},
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "Approval",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		},
+		{
+		  "name": "operator",
+		  "type": "felt"
+		},
+		{
+		  "name": "approved",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "ApprovalForAll",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "beast_state",
+		  "type": "Beast"
+		}
+	  ],
+	  "keys": [],
+	  "name": "CreateBeast",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "beast_state",
+		  "type": "Beast"
+		}
+	  ],
+	  "keys": [],
+	  "name": "UpdateBeastState",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "beast_level",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "BeastLevelUp",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "damage",
+		  "type": "felt"
+		},
+		{
+		  "name": "beast_health",
+		  "type": "felt"
+		},
+		{
+		  "name": "xp_gained",
+		  "type": "felt"
+		},
+		{
+		  "name": "gold_reward",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "BeastAttacked",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "damage",
+		  "type": "felt"
+		},
+		{
+		  "name": "adventurer_health",
+		  "type": "felt"
+		},
+		{
+		  "name": "xp_gained",
+		  "type": "felt"
+		},
+		{
+		  "name": "gold_reward",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "AdventurerAttacked",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "FledBeast",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "damage",
+		  "type": "felt"
+		},
+		{
+		  "name": "adventurer_health",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "AdventurerAmbushed",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "balance",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "UpdateGoldBalance",
+	  "type": "event"
+	},
+	{
+	  "name": "initializer",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "address_of_controller",
+		  "type": "felt"
+		},
+		{
+		  "name": "proxy_admin",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "upgrade",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "new_implementation",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "create",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "adventurer_dynamic",
+		  "type": "AdventurerDynamic"
+		}
+	  ]
+	},
+	{
+	  "name": "create_starting_beast",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "beast_id",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		}
+	  ]
+	},
+	{
+	  "name": "attack",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "damage_to_beast",
+		  "type": "felt"
+		},
+		{
+		  "name": "damage_from_beast",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "counter_attack",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "damage",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "flee",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "fled",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "set_beast_by_id",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "beast",
+		  "type": "Beast"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "increase_xp",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "beast_dynamic_",
+		  "type": "BeastDynamic"
+		},
+		{
+		  "name": "amount",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "returned_beast_dynamic",
+		  "type": "BeastDynamic"
+		}
+	  ]
+	},
+	{
+	  "name": "get_beast_by_id",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "beast",
+		  "type": "Beast"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "get_adventurer_from_beast",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "beast_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "adventurerState",
+		  "type": "AdventurerState"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "get_total_supply",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "total_supply",
+		  "type": "Uint256"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "add_to_balance",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "addition",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "subtract_from_balance",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "subtraction",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "zero_out_gold_balance",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "balance_of",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "balance",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "get_world_supply",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "balance",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	}
+  ]
