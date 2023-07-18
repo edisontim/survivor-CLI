@@ -1,0 +1,923 @@
+[
+	{
+	  "name": "Uint256",
+	  "size": 2,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "low",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "high",
+		  "type": "felt",
+		  "offset": 1
+		}
+	  ]
+	},
+	{
+	  "name": "Item",
+	  "size": 13,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "Id",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "Slot",
+		  "type": "felt",
+		  "offset": 1
+		},
+		{
+		  "name": "Type",
+		  "type": "felt",
+		  "offset": 2
+		},
+		{
+		  "name": "Material",
+		  "type": "felt",
+		  "offset": 3
+		},
+		{
+		  "name": "Rank",
+		  "type": "felt",
+		  "offset": 4
+		},
+		{
+		  "name": "Prefix_1",
+		  "type": "felt",
+		  "offset": 5
+		},
+		{
+		  "name": "Prefix_2",
+		  "type": "felt",
+		  "offset": 6
+		},
+		{
+		  "name": "Suffix",
+		  "type": "felt",
+		  "offset": 7
+		},
+		{
+		  "name": "Greatness",
+		  "type": "felt",
+		  "offset": 8
+		},
+		{
+		  "name": "CreatedBlock",
+		  "type": "felt",
+		  "offset": 9
+		},
+		{
+		  "name": "XP",
+		  "type": "felt",
+		  "offset": 10
+		},
+		{
+		  "name": "Adventurer",
+		  "type": "felt",
+		  "offset": 11
+		},
+		{
+		  "name": "Bag",
+		  "type": "felt",
+		  "offset": 12
+		}
+	  ]
+	},
+	{
+	  "name": "Bid",
+	  "size": 5,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "price",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "expiry",
+		  "type": "felt",
+		  "offset": 1
+		},
+		{
+		  "name": "bidder",
+		  "type": "felt",
+		  "offset": 2
+		},
+		{
+		  "name": "status",
+		  "type": "felt",
+		  "offset": 3
+		},
+		{
+		  "name": "item_id",
+		  "type": "felt",
+		  "offset": 4
+		}
+	  ]
+	},
+	{
+	  "data": [
+		{
+		  "name": "previousOwner",
+		  "type": "felt"
+		},
+		{
+		  "name": "newOwner",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "OwnershipTransferred",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "from_",
+		  "type": "felt"
+		},
+		{
+		  "name": "to",
+		  "type": "felt"
+		},
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "Transfer",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		},
+		{
+		  "name": "approved",
+		  "type": "felt"
+		},
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "Approval",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		},
+		{
+		  "name": "operator",
+		  "type": "felt"
+		},
+		{
+		  "name": "approved",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "ApprovalForAll",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "implementation",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "Upgraded",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "previousAdmin",
+		  "type": "felt"
+		},
+		{
+		  "name": "newAdmin",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "AdminChanged",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "item_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "to",
+		  "type": "felt"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "MintItem",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "item_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "item",
+		  "type": "Item"
+		}
+	  ],
+	  "keys": [],
+	  "name": "UpdateItemState",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "item",
+		  "type": "Item"
+		},
+		{
+		  "name": "market_item_id",
+		  "type": "felt"
+		},
+		{
+		  "name": "bid",
+		  "type": "Bid"
+		}
+	  ],
+	  "keys": [],
+	  "name": "ItemMerchantUpdate",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "item_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "ItemXPIncrease",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "item_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "ItemGreatnessIncrease",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "item_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "ItemNamePrefixesAssigned",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "item_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "ItemNameSuffixAssigned",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "caller",
+		  "type": "felt"
+		},
+		{
+		  "name": "items_number",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "MintDailyItems",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "market_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "item_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "owner",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "ClaimItem",
+	  "type": "event"
+	},
+	{
+	  "name": "initializer",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "name",
+		  "type": "felt"
+		},
+		{
+		  "name": "symbol",
+		  "type": "felt"
+		},
+		{
+		  "name": "address_of_controller",
+		  "type": "felt"
+		},
+		{
+		  "name": "proxy_admin",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "upgrade",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "new_implementation",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "totalSupply",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "totalSupply",
+		  "type": "Uint256"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "tokenByIndex",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "index",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "tokenOfOwnerByIndex",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		},
+		{
+		  "name": "index",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "supportsInterface",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "interfaceId",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "name",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "name",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "symbol",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "symbol",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "balanceOf",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "balance",
+		  "type": "Uint256"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "ownerOf",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "tokenURI",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "tokenURI_len",
+		  "type": "felt"
+		},
+		{
+		  "name": "tokenURI",
+		  "type": "felt*"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "owner",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "transferOwnership",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "newOwner",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "renounceOwnership",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": []
+	},
+	{
+	  "name": "mint",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "to",
+		  "type": "felt"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "id",
+		  "type": "Uint256"
+		}
+	  ]
+	},
+	{
+	  "name": "mint_from_mart",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "to",
+		  "type": "felt"
+		},
+		{
+		  "name": "item_id",
+		  "type": "felt"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "id",
+		  "type": "Uint256"
+		}
+	  ]
+	},
+	{
+	  "name": "mint_starter_weapon",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "to",
+		  "type": "felt"
+		},
+		{
+		  "name": "weapon_id",
+		  "type": "felt"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "item_token_id",
+		  "type": "Uint256"
+		}
+	  ]
+	},
+	{
+	  "name": "update_adventurer",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "adventurerId",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "update_xp",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "xp",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "set_item_by_id",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "item_id",
+		  "type": "felt"
+		},
+		{
+		  "name": "greatness",
+		  "type": "felt"
+		},
+		{
+		  "name": "xp",
+		  "type": "felt"
+		},
+		{
+		  "name": "adventurer",
+		  "type": "felt"
+		},
+		{
+		  "name": "bag_id",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "increase_xp",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "item_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "amount",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "updated_item",
+		  "type": "Item"
+		}
+	  ]
+	},
+	{
+	  "name": "allocate_xp_to_items",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "amount",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "get_random_number",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "dice_roll",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "get_item_by_token_id",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "item",
+		  "type": "Item"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "item_owner",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "tokenId",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "get_mint_index",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "number",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "get_new_items",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "number",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "mint_daily_items",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": []
+	},
+	{
+	  "name": "get_random_item_from_seed",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "market_item_id",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "item",
+		  "type": "Item"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "random_item_id",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "market_item_id",
+		  "type": "felt"
+		},
+		{
+		  "name": "daily_seed",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "item",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "view_bid",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "market_item_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "bid",
+		  "type": "Bid"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "view_unminted_item",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "market_item_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "item",
+		  "type": "Item"
+		},
+		{
+		  "name": "bid",
+		  "type": "Bid"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "bid_on_item",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "market_item_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "original_bid",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "claim_item",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "market_item_id",
+		  "type": "Uint256"
+		},
+		{
+		  "name": "adventurer_token_id",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": []
+	}
+  ]

@@ -1,0 +1,423 @@
+[
+	{
+	  "name": "Uint256",
+	  "size": 2,
+	  "type": "struct",
+	  "members": [
+		{
+		  "name": "low",
+		  "type": "felt",
+		  "offset": 0
+		},
+		{
+		  "name": "high",
+		  "type": "felt",
+		  "offset": 1
+		}
+	  ]
+	},
+	{
+	  "data": [
+		{
+		  "name": "role",
+		  "type": "felt"
+		},
+		{
+		  "name": "account",
+		  "type": "felt"
+		},
+		{
+		  "name": "sender",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "RoleGranted",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "role",
+		  "type": "felt"
+		},
+		{
+		  "name": "account",
+		  "type": "felt"
+		},
+		{
+		  "name": "sender",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "RoleRevoked",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "role",
+		  "type": "felt"
+		},
+		{
+		  "name": "previousAdminRole",
+		  "type": "felt"
+		},
+		{
+		  "name": "newAdminRole",
+		  "type": "felt"
+		}
+	  ],
+	  "keys": [],
+	  "name": "RoleAdminChanged",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "from_",
+		  "type": "felt"
+		},
+		{
+		  "name": "to",
+		  "type": "felt"
+		},
+		{
+		  "name": "value",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "Transfer",
+	  "type": "event"
+	},
+	{
+	  "data": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		},
+		{
+		  "name": "spender",
+		  "type": "felt"
+		},
+		{
+		  "name": "value",
+		  "type": "Uint256"
+		}
+	  ],
+	  "keys": [],
+	  "name": "Approval",
+	  "type": "event"
+	},
+	{
+	  "name": "constructor",
+	  "type": "constructor",
+	  "inputs": [
+		{
+		  "name": "name",
+		  "type": "felt"
+		},
+		{
+		  "name": "symbol",
+		  "type": "felt"
+		},
+		{
+		  "name": "decimals",
+		  "type": "felt"
+		},
+		{
+		  "name": "admin",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "name",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "name",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "symbol",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "symbol",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "totalSupply",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "totalSupply",
+		  "type": "Uint256"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "decimals",
+	  "type": "function",
+	  "inputs": [],
+	  "outputs": [
+		{
+		  "name": "decimals",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "balanceOf",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "account",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "balance",
+		  "type": "Uint256"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "allowance",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		},
+		{
+		  "name": "spender",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "remaining",
+		  "type": "Uint256"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "transfer",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "recipient",
+		  "type": "felt"
+		},
+		{
+		  "name": "amount",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "transferFrom",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "sender",
+		  "type": "felt"
+		},
+		{
+		  "name": "recipient",
+		  "type": "felt"
+		},
+		{
+		  "name": "amount",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "approve",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "spender",
+		  "type": "felt"
+		},
+		{
+		  "name": "amount",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "increaseAllowance",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "spender",
+		  "type": "felt"
+		},
+		{
+		  "name": "added_value",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "decreaseAllowance",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "spender",
+		  "type": "felt"
+		},
+		{
+		  "name": "subtracted_value",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "success",
+		  "type": "felt"
+		}
+	  ]
+	},
+	{
+	  "name": "mint",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "to",
+		  "type": "felt"
+		},
+		{
+		  "name": "amount",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "burn_away",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "owner",
+		  "type": "felt"
+		},
+		{
+		  "name": "amount",
+		  "type": "Uint256"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "has_role",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "role",
+		  "type": "felt"
+		},
+		{
+		  "name": "address",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": [
+		{
+		  "name": "has_role",
+		  "type": "felt"
+		}
+	  ],
+	  "stateMutability": "view"
+	},
+	{
+	  "name": "grant_role",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "role",
+		  "type": "felt"
+		},
+		{
+		  "name": "address",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "revoke_role",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "role",
+		  "type": "felt"
+		},
+		{
+		  "name": "address",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	},
+	{
+	  "name": "renounce_role",
+	  "type": "function",
+	  "inputs": [
+		{
+		  "name": "role",
+		  "type": "felt"
+		},
+		{
+		  "name": "address",
+		  "type": "felt"
+		}
+	  ],
+	  "outputs": []
+	}
+  ]
