@@ -21,6 +21,10 @@ const FgYellow = "\x1b[33m"
 
 export default class Game {
 
+	async getAdventurerStatus(advId) {
+		return (this.gameData.ADVENTURER_STATUS[(await this.getAdventurerById(advId)).adventurer.Status.toNumber()]);
+	}
+
 	async executeContractFunction(contract, funcName, params) {
 		let transactionResult = false;
 		try {
